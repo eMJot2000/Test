@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Volzet+",
+  "version": "1.0",
+  "description": "Deze extensie voor de Google Agenda blokkeert de mogelijkheid om een uitnodiging te accepteren als het maximumaantal deelnemers wordt bereikt. Ook blokkeert het de mogelijkheid om 'Misschien' te antwoorden op een uitnodiging.",
+  "content_scripts": [
+    {
+      "js": ["volzet.js"],
+      "css": ["volzet.css"],
+      "matches": [
+          "https://calendar.google.com/*"
+      ]
+    }
+  ]
+}
